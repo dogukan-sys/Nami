@@ -1,2 +1,3 @@
-# Nami
- weather forecast web app
+# nami🍊
+
+weather forecast app

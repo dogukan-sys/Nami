@@ -1,0 +1,8 @@
+# Dependency packages files
+node_modules/
+
+# Output
+dist/
+
+# Prettier config
+.prettierrc
