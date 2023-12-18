@@ -1,9 +1,6 @@
 const config = {
   // General
-  name: "John",
-  imageBackground: false,
-  openInNewTab: true,
-  twelveHourFormat: false,
+  name: "Dogukan",
 
   // Greetings
   greetingMorning: "Good morning!",
