@@ -1,1 +1,2 @@
 require("./greeting");
+require("./time");

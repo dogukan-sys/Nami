@@ -10,6 +10,7 @@ const greeting2 = config.greetingAfternoon;
 const greeting3 = config.greetingEvening;
 const greeting4 = config.greetingNight;
 
+console.log(hour);
 if (hour >= 23 || hour < 6) {
   setGreeting(greeting1);
 } else if (hour >= 6 && hour < 12) {
@@ -19,7 +20,6 @@ if (hour >= 23 || hour < 6) {
 } else {
   setGreeting(greeting4);
 }
-
 function setGreeting(greet) {
   greeting.innerText = `${greet} ${name}`;
 }
