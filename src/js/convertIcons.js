@@ -16,7 +16,7 @@ const iconConversion = {
   "13d": "cloud-snow", // snow (day)
   "13n": "cloud-snow", // snow (night)
   "50d": "cloud-fog", // mist (day)
-  "50n": "cloud-fog" // mist (night)
+  "50n": "cloud-fog", // mist (night)
 };
 
 // Example usage:

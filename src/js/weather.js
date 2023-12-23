@@ -19,7 +19,7 @@ async function exportWeatherData() {
 }
 
 function setWeather(temp, description, iconId) {
-  const iconElement = document.querySelector(".weatherIcon img");
+  const iconElement = document.querySelector(".weatherIcon");
   const tempElement = document.querySelector(".weatherValue p");
   const descElement = document.querySelector(".weatherDescription p");
   const icon = require("../icons/" + iconId + ".png");

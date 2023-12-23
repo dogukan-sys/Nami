@@ -1,0 +1,86 @@
+:root {
+  --background: #FFA45B;
+  --cards: #FFDA77;
+  --accent: #AEE6E6;
+  --fg: #FBF6F0;
+}
+
+body {
+    font-family: 'Poppins';
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fg);
+}
+
+.container {
+  width: 180vh;
+  height: 85vh;
+  display: grid;
+  grid-template: "time weather" 1fr
+                  "forecast forecast" 1fr;
+  gap: 30px;
+  padding: 20px;
+}
+
+.timeBlock {
+  grid-area: time;
+  flex-direction: column;
+}
+
+.weatherBlock {
+  grid-area: weather;
+  flex-direction: column;
+}
+
+.forecastBlock {
+  grid-area: forecast;
+  
+}
+
+.timeBlock, .weatherBlock, .forecastBlock{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+#greeting {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 900;
+  font-size: 4rem;
+  gap: 1rem;
+}
+
+.weather {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.weather img {
+  height: 32px;
+  margin-right: 0.5rem;
+}
+
+.weatherDescription {
+  margin-left: 1rem;
+}
