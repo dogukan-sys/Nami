@@ -1,30 +1,33 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+
 module.exports = {
   entry: "./src/js/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true
+    clean: true,
   },
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"]
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: "asset/resource"
-      }
-    ]
+        type: "asset/resource",
+        generator: {
+          filename: "icons/[name][ext]",
+        },
+      },
+    ],
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
       filename: "index.html",
-      title: "nami🍊",
-      inject: "body"
-    })
-  ]
+      inject: "body",
+    }),
+  ],
 };
